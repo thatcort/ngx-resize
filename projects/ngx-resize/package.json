@@ -1,6 +1,6 @@
 {
     "name": "@thatcort/ngx-resize",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/thatcort/ngx-resize/tree/main/projects/ngx-resize"
@@ -15,8 +15,8 @@
     ],
     "license": "MIT",
     "peerDependencies": {
-        "@angular/common": "^18.0.0",
-        "@angular/core": "^18.0.0"
+        "@angular/common": "^19.0",
+        "@angular/core": "^19.0"
     },
     "dependencies": {
         "tslib": "^2.0.0"
