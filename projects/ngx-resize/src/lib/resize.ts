@@ -1,16 +1,17 @@
-import { DOCUMENT } from '@angular/common';
+
 import {
-    Directive,
-    ElementRef,
-    EventEmitter,
-    Inject,
-    inject,
-    InjectionToken,
-    Input,
-    NgZone,
-    Output,
-    type OnDestroy,
-    type OnInit,
+  Directive,
+  ElementRef,
+  EventEmitter,
+  Inject,
+  inject,
+  InjectionToken,
+  Input,
+  NgZone,
+  Output,
+  type OnDestroy,
+  type OnInit,
+  DOCUMENT
 } from '@angular/core';
 import {
     debounceTime,
