@@ -6,20 +6,21 @@
         "ngx-resize": {
             "projectType": "library",
             "root": "projects/ngx-resize",
-            "sourceRoot": "projects/ngx-resize/src",
+            "sourceRoot": "projects/ngx-resize",
             "prefix": "lib",
             "architect": {
                 "build": {
-                    "builder": "@angular-devkit/build-angular:ng-packagr",
+                    "builder": "@angular/build:library",
                     "options": {
-                        "project": "projects/ngx-resize/ng-package.json"
+                        "tsConfig": "projects/ngx-resize/tsconfig.lib.json",
+                        "outputPath": "dist/ngx-resize"
                     },
                     "configurations": {
                         "production": {
                             "tsConfig": "projects/ngx-resize/tsconfig.lib.prod.json"
                         },
                         "development": {
-                            "tsConfig": "projects/ngx-resize/tsconfig.lib.json"
+                            "compilationMode": "full"
                         }
                     },
                     "defaultConfiguration": "production"
@@ -38,29 +39,29 @@
         "analytics": "37f235fc-8873-4ce7-bc8b-fc6289e8771e"
     },
     "schematics": {
-      "@schematics/angular:component": {
-        "type": "component"
-      },
-      "@schematics/angular:directive": {
-        "type": "directive"
-      },
-      "@schematics/angular:service": {
-        "type": "service"
-      },
-      "@schematics/angular:guard": {
-        "typeSeparator": "."
-      },
-      "@schematics/angular:interceptor": {
-        "typeSeparator": "."
-      },
-      "@schematics/angular:module": {
-        "typeSeparator": "."
-      },
-      "@schematics/angular:pipe": {
-        "typeSeparator": "."
-      },
-      "@schematics/angular:resolver": {
-        "typeSeparator": "."
-      }
+        "@schematics/angular:component": {
+            "type": "component"
+        },
+        "@schematics/angular:directive": {
+            "type": "directive"
+        },
+        "@schematics/angular:service": {
+            "type": "service"
+        },
+        "@schematics/angular:guard": {
+            "typeSeparator": "."
+        },
+        "@schematics/angular:interceptor": {
+            "typeSeparator": "."
+        },
+        "@schematics/angular:module": {
+            "typeSeparator": "."
+        },
+        "@schematics/angular:pipe": {
+            "typeSeparator": "."
+        },
+        "@schematics/angular:resolver": {
+            "typeSeparator": "."
+        }
     }
 }

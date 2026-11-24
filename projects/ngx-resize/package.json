@@ -1,12 +1,16 @@
 {
     "name": "@thatcort/ngx-resize",
-    "version": "2.4.0",
+    "version": "2.5.0",
+    "exports": {
+        ".": "./src/public-api.ts"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/thatcort/ngx-resize/tree/main/projects/ngx-resize"
     },
     "author": {
-        "name": "Brian Cort"    },
+        "name": "Brian Cort"
+    },
     "description": "Fork of original NgxResize Service to support newer Angular versions",
     "keywords": [
         "typescript",
@@ -15,10 +19,7 @@
     ],
     "license": "MIT",
     "peerDependencies": {
-        "@angular/common": "^21.0",
-        "@angular/core": "^21.0"
-    },
-    "dependencies": {
-        "tslib": "^2.0.0"
+        "@angular/common": "^22.0",
+        "@angular/core": "^22.0"
     }
 }

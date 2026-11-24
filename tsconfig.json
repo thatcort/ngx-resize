@@ -2,7 +2,6 @@
 {
     "compileOnSave": false,
     "compilerOptions": {
-      "baseUrl": "./",
       "outDir": "./dist/out-tsc",
       "forceConsistentCasingInFileNames": true,
       "esModuleInterop": true,
@@ -14,7 +13,7 @@
       "sourceMap": true,
       "paths": {
         "ngx-resize": [
-          "dist/ngx-resize"
+          "./dist/ngx-resize"
         ]
       },
       "declaration": false,
